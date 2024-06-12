@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+bin/
+obj/
+
+# macOS specific files
+.DS_Store
+
+# Virtual environment files
+nfc_project/bin/
+nfc_project/pyvenv.cfg
+nfc_project/include/
+nfc_project/lib/
+nfc_project/lib64/
+nfc_project/src/
+
+# IDE specific files
+.idea/
+*.iml
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Add other ignored files/folders here as needed
+
