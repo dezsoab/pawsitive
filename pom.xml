@@ -49,6 +49,7 @@
     </dependencies>
 
     <build>
+        <directory>backend/target</directory> <!-- Build-Ausgabeverzeichnis -->
         <sourceDirectory>backend/src/main/java</sourceDirectory>
         <resources>
             <resource>
