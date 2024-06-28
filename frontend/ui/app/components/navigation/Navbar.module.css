@@ -1,0 +1,23 @@
+.navBar {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.navBar ul {
+  display: flex;
+  gap: 10rem;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.navBar ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.navBar img {
+  border-radius: 50%;
+}

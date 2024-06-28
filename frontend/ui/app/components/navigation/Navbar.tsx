@@ -3,15 +3,19 @@ import Link from "next/link";
 import Image from "next/image";
 import CTAButton from "../cta/CTAButton";
 
+import styles from "./Navbar.module.css";
+
 const Navbar = () => {
   return (
-    <nav>
-      <Image
-        src="/assets/logo.png"
-        width={500}
-        height={500}
-        alt="Picture of the author"
-      />
+    <nav className={styles.navBar}>
+      <Link href="/">
+        <Image
+          src="/assets/logo.png"
+          width={100}
+          height={100}
+          alt="Pawsitivecollar logo"
+        />
+      </Link>
       <ul>
         <li>
           <Link href="/">Home</Link>
@@ -26,7 +30,14 @@ const Navbar = () => {
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
-      <CTAButton title="Shop Now" toPath="/about" />
+      <CTAButton
+        title="Shop Now"
+        toPath="/shop"
+        style={{
+          backgroundColor: "var(--color-pink-light)",
+          color: "var(--color-white)",
+        }}
+      />
     </nav>
   );
 };
