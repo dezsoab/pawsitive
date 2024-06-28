@@ -15,4 +15,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           host: ${{ secrets.SSH_HOST }}
           password: ${{ secrets.SSH_PASSWORD }}
-          script: "cd /var/www/pawsitivecollar.com && ./test.sh"
+          script: "cd /var/www/pawsitivecollar.com && ./auto_deploy.sh"
