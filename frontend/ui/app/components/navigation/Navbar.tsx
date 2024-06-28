@@ -1,9 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import CTAButton from "../cta/CTAButton";
 
 const Navbar = () => {
   return (
     <nav>
+      <Image
+        src="/assets/logo.png"
+        width={500}
+        height={500}
+        alt="Picture of the author"
+      />
       <ul>
         <li>
           <Link href="/">Home</Link>
@@ -18,6 +26,7 @@ const Navbar = () => {
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
+      <CTAButton title="Shop Now" toPath="/about" />
     </nav>
   );
 };
