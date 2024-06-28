@@ -10,4 +10,5 @@
   cursor: pointer;
   scale: 1.05;
   background-color: var(--color-pink-dark) !important;
+  transform: translateY(4px);
 }
