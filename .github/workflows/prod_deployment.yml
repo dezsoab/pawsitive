@@ -1,12 +1,15 @@
-name: CD
+name: Continous Deployment on Prod Server
 
 on:
-  push:
-    branches: [test1]
+  pull_request:
+    branches:
+      - prod
+    types: [closed]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: ${{ github.event.pull_request.merged == true }}
 
     steps:
       - name: Deploy to production server
