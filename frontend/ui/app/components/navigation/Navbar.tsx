@@ -5,10 +5,15 @@ import CTAButton from "../cta/CTAButton";
 
 import styles from "./Navbar.module.css";
 
+import { useLocale, useTranslations } from "next-intl";
+
 const Navbar = () => {
+  const locale = useLocale();
+  const t = useTranslations();
+
   return (
     <nav className={styles.navBar}>
-      <Link href="/">
+      <Link href="/" locale={locale}>
         <Image
           src="/assets/logo.png"
           width={100}
@@ -18,22 +23,25 @@ const Navbar = () => {
       </Link>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/">{t("Navigation.home")}</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="about">{t("Navigation.about")}</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="contact" locale={locale}>
+            {t("Navigation.contact")}
+          </Link>
         </li>
       </ul>
       <CTAButton
-        title="Shop Now"
-        toPath="/shop"
+        title={t("Navigation.shop")}
+        toPath="shop"
         style={{
           backgroundColor: "var(--color-pink-light)",
           color: "var(--color-white)",
         }}
+        locale={locale}
       />
     </nav>
   );
