@@ -1,6 +1,7 @@
 import styles from "./home.module.css";
 import HeroSection from "./HeroSection";
 import { useTranslations } from "next-intl";
+import LanguagePicker from "@/components/language/LanguagePicker";
 
 export default function Home() {
   const t = useTranslations();
@@ -9,6 +10,7 @@ export default function Home() {
     <main className={styles.home}>
       <HeroSection />
       <h1>{t("Index.title")}</h1>
+      <LanguagePicker />
     </main>
   );
 }

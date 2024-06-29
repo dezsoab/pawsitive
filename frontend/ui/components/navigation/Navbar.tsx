@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navBar}>
-      <Link href="/" locale={locale}>
+      <Link href="home" locale={locale}>
         <Image
           src="/assets/logo.png"
           width={100}
@@ -23,7 +23,7 @@ const Navbar = () => {
       </Link>
       <ul>
         <li>
-          <Link href="/">{t("Navigation.home")}</Link>
+          <Link href="home">{t("Navigation.home")}</Link>
         </li>
         <li>
           <Link href="about">{t("Navigation.about")}</Link>
