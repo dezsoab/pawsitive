@@ -1,5 +1,3 @@
-// mocks.ts
-
 export const mockNextNavigation = () => ({
   usePathname: () => "/",
   useRouter: () => ({

@@ -4,15 +4,12 @@ import huMessages from "../../../messages/hu.json";
 
 const locales = {
   en: {
-    // locale: "en",
     messages: enMessages,
   },
   de: {
-    // locale: "de",
     messages: deMessages,
   },
   hu: {
-    // locale: huMessages.Locale,
     messages: huMessages,
   },
 };
